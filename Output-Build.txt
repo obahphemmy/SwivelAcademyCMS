@@ -1,0 +1,4 @@
+﻿Build started...
+1>------ Build started: Project: SwivelAcademyCMS.ApplicationCore, Configuration: Debug Any CPU ------
+1>SwivelAcademyCMS.ApplicationCore -> C:\Personal Projects\SwivelAcademyCMS\SwivelAcademyCMS.ApplicationCore\bin\Debug\netstandard2.1\SwivelAcademyCMS.ApplicationCore.dll
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
