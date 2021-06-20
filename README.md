@@ -27,3 +27,5 @@ A course management solution for Swivel Academy.
 - PUT /api/v1/teachers/{id}
 - DELETE /api/v1/teachers/{id}
 - POST api/v1/teachers/assigncourse
+
+### Test run: Clone this repo and open the solution file and run....
