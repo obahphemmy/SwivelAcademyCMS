@@ -4,8 +4,8 @@ A course management solution for Swivel Academy.
 ## API implementation Contains the following endpoints
 ## Course
 
-[ ] GET /api/v1/courses
-[ ] POST /api/v1/courses
+- GET /api/v1/courses
+- POST /api/v1/courses
 [] GET /api/v1/courses/{id}
 [] PUT /api/v1/courses/{id}
 [] DELETE /api/v1/courses/{id}
