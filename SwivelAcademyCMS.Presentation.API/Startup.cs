@@ -32,7 +32,7 @@ namespace SwivelAcademyCMS.Presentation.API
 
 			services.AddControllers();
 
-			services.AddDbContext<SwivelDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+			services.AddDbContext<SwivelDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SwivelAcademyDB")));
 
 			services.AddSwivelCMSServices();
 
@@ -43,8 +43,11 @@ namespace SwivelAcademyCMS.Presentation.API
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+		public void Configure(IApplicationBuilder app, IWebHostEnvironment env, SwivelDbContext dbContext)
 		{
+
+			Initializer.RunMigration(dbContext);
+
 			if (env.IsDevelopment())
 			{
 				app.UseDeveloperExceptionPage();
