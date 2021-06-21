@@ -70,13 +70,21 @@ namespace SwivelAcademyCMS.ApplicationCore.Services
 
 		public async Task<int> RegisterStudentCourse(StudentCourseRequest courseRequest)
 		{
-			var studentCourse = new StudentCourse { CourseId = courseRequest.CourseId, StudentId = courseRequest.StudentId };
+			// var studentCourse = new StudentCourse { CourseId = courseRequest.CourseId, StudentId = courseRequest.StudentId };
+
+			var student = await _unitOfWork.Students.Find(courseRequest.StudentId);
+			var course = await _unitOfWork.Courses.Find(courseRequest.CourseId);
+
+			if (student == null && course == null)
+				return 0;
+
+			var studentCourse = new StudentCourse { Course = course, Student = student };
 
 			await _unitOfWork.StudentCourses.Add(studentCourse);
 
 			if (await _unitOfWork.Complete() > 0)
 			{
-				return studentCourse.Id;
+				return student.Id;
 			}
 
 			return 0;
