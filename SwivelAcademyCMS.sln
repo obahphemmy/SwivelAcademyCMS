@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwivelAcademyCMS.Infra.IoC"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwivelAcademyCMS.Presentation.API", "SwivelAcademyCMS.Presentation.API\SwivelAcademyCMS.Presentation.API.csproj", "{A0E54699-5BC6-42B2-A16E-7508D7BAAD26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwivelAcademyCMS.Test", "SwivelAcademyCMS.Test\SwivelAcademyCMS.Test.csproj", "{DA95B2E5-B96E-4536-97C8-D2EA9449D43D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwivelAcademyCMC.UnitTest", "SwivelAcademyCMC.UnitTest\SwivelAcademyCMC.UnitTest.csproj", "{B0841C12-C73F-419B-9CC0-CCCDB33705F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{A0E54699-5BC6-42B2-A16E-7508D7BAAD26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0E54699-5BC6-42B2-A16E-7508D7BAAD26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0E54699-5BC6-42B2-A16E-7508D7BAAD26}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DA95B2E5-B96E-4536-97C8-D2EA9449D43D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA95B2E5-B96E-4536-97C8-D2EA9449D43D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA95B2E5-B96E-4536-97C8-D2EA9449D43D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA95B2E5-B96E-4536-97C8-D2EA9449D43D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0841C12-C73F-419B-9CC0-CCCDB33705F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0841C12-C73F-419B-9CC0-CCCDB33705F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0841C12-C73F-419B-9CC0-CCCDB33705F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0841C12-C73F-419B-9CC0-CCCDB33705F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
